@@ -9,4 +9,4 @@ I configured the Ubuntu Server VM with the following resources based on the host
 ## What I broke and how I fixed it
 I deleted the hostname file (`sudo rm /etc/hostname`) to break the system. After reboot, the `hostname` command showed no name. Then I restored the `clean-install` snapshot, and the name came back.
 ## What did not work
-*No issues encountered. The clean-install snapshot was taken before modifications, and the rollback successfully restored the system state.*
+*SSH connection had issues with VirtualBox NAT, so I used screenshots for evidence, as allowed by the instructions.*
