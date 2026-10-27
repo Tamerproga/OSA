@@ -8,4 +8,4 @@ I configured the Ubuntu Server VM with the following resources based on the host
 * **30 GB of Disk:** The host has 251 GB of storage. A 30 GB virtual disk is more than enough for the Ubuntu Server OS and future updates, without wasting too much of the host's physical SSD space.
 
 ## What did not work
-*No issues encountered. The clean-install snapshot was taken before modifications, and the rollback successfully restored the system state.*
+**No issues encountered. The clean-install snapshot was taken before modifications, and the rollback successfully restored the system state.**
