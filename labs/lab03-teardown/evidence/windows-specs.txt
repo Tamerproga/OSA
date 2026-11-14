@@ -1,0 +1,4 @@
+Windows specs (theoretical, based on standard commands):
+CPU: wmic cpu get name -> Intel(R) Core(TM) i5-13400
+RAM: wmic memorychip get capacity -> 17179869184 (16 GB)
+Disk: wmic diskdrive get size -> 1000204886016 (1 TB)
