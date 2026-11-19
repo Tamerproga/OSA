@@ -1,0 +1,47 @@
+> sysctl -n machdep.cpu.brand_string
+Apple M4
+
+> sysctl hw.memsize
+hw.memsize: 17179869184
+
+> system_profiler SPStorageDataType
+Storage:
+
+    Data:
+
+      Free: 125,64 GB (125 637 734 400 bytes)
+      Capacity: 245,11 GB (245 107 195 904 bytes)
+      Mount Point: /System/Volumes/Data
+      File System: APFS
+      Writable: Yes
+      Ignore Ownership: No
+      BSD Name: disk3s5
+      Volume UUID: 289FC7EE-E904-4F4F-B057-864C28F1FDFC
+      Physical Drive:
+          Device Name: APPLE SSD AP0256Z
+          Media Name: AppleAPFSMedia
+          Medium Type: SSD
+          Protocol: Apple Fabric
+          Internal: Yes
+          Partition Map Type: Unknown
+          S.M.A.R.T. Status: Verified
+
+    Macintosh HD:
+
+      Free: 125,64 GB (125 637 734 400 bytes)
+      Capacity: 245,11 GB (245 107 195 904 bytes)
+      Mount Point: /
+      File System: APFS
+      Writable: No
+      Ignore Ownership: No
+      BSD Name: disk3s1s1
+      Volume UUID: C244CF43-FFDA-4C98-92EB-5E6B6BF208DD
+      Physical Drive:
+          Device Name: APPLE SSD AP0256Z
+          Media Name: AppleAPFSMedia
+          Medium Type: SSD
+          Protocol: Apple Fabric
+          Internal: Yes
+          Partition Map Type: Unknown
+          S.M.A.R.T. Status: Verified
+

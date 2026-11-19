@@ -1,0 +1,8 @@
+> wmic cpu get name
+Intel(R) Core(TM) i5-13400
+
+> wmic memorychip get capacity
+17179869184
+
+> wmic diskdrive get size
+1000204886016
