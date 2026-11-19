@@ -1,17 +1,14 @@
 # Lab 4 - Partition, mirror, fail, recover
 
-## Layout
-- **Windows:** (Theoretical part) MBR is used for legacy BIOS, GPT for modern UEFI. We assign a drive letter.
-- **Linux:** Created a RAID 1 (mirror) array `/dev/md0` using two 1GB disks (`/dev/sdb` and `/dev/sdc`). Formatted as `ext4` and mounted at `/mnt/raid1`. After failure, `/dev/sdd` was added and the array rebuilt successfully.
+## Windows Storage
+The Windows disk uses a **GPT** partition style because it supports UEFI boot and larger drives (unlike the old MBR). A drive letter (C:) was assigned to the primary NTFS partition. The required `Get-Disk`, `Get-Volume`, and `Get-Partition` outputs are saved in `evidence/windows-storage.txt`.
+
+## Linux RAID 1 Array
+I attached three 1GB disks (`sdb`, `sdc`, `sdd`). I created a RAID 1 mirror using `sdb` and `sdc`, formatted it as `ext4`, and mounted it at `/mnt/raid1`. The evidence files contain the exact commands executed alongside their raw output, including `mdadm --detail`. I used SHA256 checksums on `proof.txt` and `random.bin` to prove data survival.
 
 ## Answer to the question
 **Colleague deleted the wrong file an hour ago. Does RAID 1 help? Why?**
-No, RAID 1 does not help in this case. RAID 1 provides redundancy against hardware failure (like a disk dying), ensuring the system stays online. However, it mirrors data instantly, so if a user deletes a file, it is deleted from both disks immediately. To recover deleted files, you need a backup or a filesystem snapshot, not a RAID array.
+No, RAID 1 does not help in this case. RAID 1 provides redundancy against hardware failure (like a dead disk), keeping the system online by mirroring data. However, if a user deletes a file, the deletion is instantaneous on both disks. To recover from accidental deletion, you need a backup or a filesystem snapshot, not a RAID array.
 
-## Evidence Files
-- `lsblk-before.txt` - Disks layout before starting.
-- `array-healthy.txt` - RAID state when fully functional.
-- `array-degraded.txt` - RAID state after one disk failed.
-- `checksum-before.txt` - MD5 checksum of the file before failure.
-- `checksum-after-failure.txt` - MD5 checksum of the file after failure (proves data survived).
-- `array-rebuilt.txt` - RAID state after adding the third disk and rebuilding.
+## What did not work the first time
+During my first attempt, my `array-rebuilt.txt` was taken before the rebuild reached 100%, so the final `[2/2] [UU]` state was not evidenced. I also used MD5 instead of SHA256, and I did not include the actual commands in the evidence files. Furthermore, I lacked the Windows `Get-Disk` output. I have corrected all of these issues in this submission.

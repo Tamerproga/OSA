@@ -1,0 +1,17 @@
+> Get-Disk
+Number Friendly Name    Serial Number   Health Status Operational Status  Total Size Partition Style
+------ -------------    -------------   ------------- ------------------  ---------- ---------------
+0      Virtual HD                      Healthy       Online                  30 GB GPT
+
+> Get-Volume
+DriveLetter FriendlyName FileSystemType DriveType HealthStatus OperationalStatus SizeRemaining      Size
+----------- ------------ -------------- --------- ------------ ----------------- -------------      ----
+            System Rese NTFS           Fixed     Healthy      OK                       16 MB    16 MB
+C                           NTFS           Fixed     Healthy      OK                    14.2 GB  29.8 GB
+
+> Get-Partition
+DiskPath     PartitionNumber DriveLetter Offset  Size Type
+--------     --------------- ----------- ------  ---- ----
+\\?\disk0: 1                               16 KB Reserved
+\\?\disk0: 2                               16 MB System
+\\?\disk0: 3               C           16 MB  29.8 GB Basic

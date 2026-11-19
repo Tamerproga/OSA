@@ -1,7 +1,37 @@
+> cat /proc/mdstat
 Personalities : [raid1] 
 md0 : active raid1 sdd[2] sdc[1]
-      1046528 blocks super 1.2 [2/1] [_U]
-      [===================>.]  recovery = 95.6% (1001856/1046528) finish=0.0min speed=250464K/sec
-      bitmap: 0/1 pages [0KB], 65536KB chunk
+      1046528 blocks super 1.2 [2/2] [UU]
+      bitmap: 1/1 pages [4KB], 65536KB chunk
 
 unused devices: <none>
+
+> sudo mdadm --detail /dev/md0
+/dev/md0:
+           Version : 1.2
+     Creation Time : Thu Nov 19 17:31:45 2026
+        Raid Level : raid1
+        Array Size : 1046528 (1022.00 MiB 1071.64 MB)
+     Used Dev Size : 1046528 (1022.00 MiB 1071.64 MB)
+      Raid Devices : 2
+     Total Devices : 2
+       Persistence : Superblock is persistent
+
+     Intent Bitmap : Internal
+
+       Update Time : Thu Nov 19 17:34:24 2026
+             State : clean 
+    Active Devices : 2
+   Working Devices : 2
+    Failed Devices : 0
+     Spare Devices : 0
+
+Consistency Policy : bitmap
+
+              Name : lab01-issayev:0  (local to host lab01-issayev)
+              UUID : ea2f07ac:26494472:5a74a9f3:cb12b054
+            Events : 43
+
+    Number   Major   Minor   RaidDevice State
+       2       8       48        0      active sync   /dev/sdd
+       1       8       32        1      active sync   /dev/sdc
