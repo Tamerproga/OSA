@@ -1,0 +1,3 @@
+> sha256sum proof.txt random.bin
+63e0549b5d9207ac7854348636ec4900a4c853d206bd4aea2c2d2a6df3807b95  /mnt/raid1/proof.txt
+6eced01ab27d255ba717cce6205a5be45ed3b83df48e8c0180a6481a272a9d91  /mnt/raid1/random.bin

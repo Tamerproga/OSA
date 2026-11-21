@@ -1,0 +1,5 @@
+--- ps output ---
+    PID    PPID USER       RSS    VSZ NLWP CMD
+   3328    3173 tamer    23844  36860    1 python3 -m http.server 8000
+--- open file descriptors count ---
+4
