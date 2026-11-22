@@ -1,0 +1,35 @@
+role,component,model,price_kzt,source,date
+Accountant,CPU,AMD Ryzen 5 5600G,65000,https://www.technodom.kz,2026-11-22
+Accountant,Motherboard,ASUS Prime A520M-K,30000,https://kaspi.kz,2026-11-22
+Accountant,Memory,Kingston FURY 16GB DDR4,25000,https://kaspi.kz,2026-11-22
+Accountant,Storage,Samsung 980 1TB NVMe,35000,https://www.alser.kz,2026-11-22
+Accountant,PSU,AeroCool 500W,15000,https://kaspi.kz,2026-11-22
+Accountant,Case,DeepCool MATREXX,20000,https://kaspi.kz,2026-11-22
+Accountant,Monitor,AOC 24" IPS,55000,https://www.technodom.kz,2026-11-22
+Accountant,OS,Windows 11 Pro OEM,80000,https://www.alser.kz,2026-11-22
+Sales,CPU,Intel Core i5-12400,80000,https://kaspi.kz,2026-11-22
+Sales,Motherboard,MSI PRO B660M-A,45000,https://kaspi.kz,2026-11-22
+Sales,Memory,Kingston FURY 32GB DDR4,45000,https://kaspi.kz,2026-11-22
+Sales,Storage,Samsung 980 1TB NVMe,35000,https://www.alser.kz,2026-11-22
+Sales,PSU,AeroCool 500W,15000,https://kaspi.kz,2026-11-22
+Sales,Case,DeepCool MATREXX,20000,https://kaspi.kz,2026-11-22
+Sales,Monitor,AOC 24" IPS,55000,https://www.technodom.kz,2026-11-22
+Sales,OS,Windows 11 Pro OEM,80000,https://www.alser.kz,2026-11-22
+Developer,CPU,AMD Ryzen 7 7700,170000,https://kaspi.kz,2026-11-22
+Developer,Motherboard,ASUS Prime B650M-A,75000,https://kaspi.kz,2026-11-22
+Developer,Memory,Kingston FURY 32GB DDR5,65000,https://kaspi.kz,2026-11-22
+Developer,Storage,Samsung 990 PRO 1TB,60000,https://www.alser.kz,2026-11-22
+Developer,PSU,Corsair RM650e,45000,https://kaspi.kz,2026-11-22
+Developer,Case,Fractal Design,35000,https://kaspi.kz,2026-11-22
+Developer,Monitor,Dell 27" 2K IPS,120000,https://www.technodom.kz,2026-11-22
+Developer,OS,Windows 11 Pro OEM,80000,https://www.alser.kz,2026-11-22
+Designer,CPU,Intel Core i5-13400F,110000,https://kaspi.kz,2026-11-22
+Designer,Motherboard,MSI PRO B760M-A,65000,https://kaspi.kz,2026-11-22
+Designer,Memory,Kingston FURY 32GB DDR5,65000,https://kaspi.kz,2026-11-22
+Designer,Storage,Samsung 990 PRO 1TB,60000,https://www.alser.kz,2026-11-22
+Designer,GPU,NVIDIA RTX 4060 8GB,180000,https://kaspi.kz,2026-11-22
+Designer,PSU,Corsair RM650e,45000,https://kaspi.kz,2026-11-22
+Designer,Case,Fractal Design,35000,https://kaspi.kz,2026-11-22
+Designer,Monitor,DELL UltraSharp 27" 4K,250000,https://www.technodom.kz,2026-11-22
+Designer,OS,Windows 11 Pro OEM,80000,https://www.alser.kz,2026-11-22
+Total,,,2685000,,
