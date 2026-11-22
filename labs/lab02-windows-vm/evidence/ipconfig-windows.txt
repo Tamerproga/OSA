@@ -1,0 +1,5 @@
+Windows IP Configuration
+Ethernet adapter Ethernet:
+   IPv4 Address. . . . . . . . . . . : 10.0.2.15
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 10.0.2.1

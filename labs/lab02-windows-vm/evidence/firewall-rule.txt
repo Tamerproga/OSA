@@ -1,0 +1,7 @@
+Name        : Allow ICMPv4 Echo In
+Enabled     : True
+Direction   : Inbound
+Action      : Allow
+Protocol    : ICMPv4
+IcmpType    : 8
+Profile     : Any

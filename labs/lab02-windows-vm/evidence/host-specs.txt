@@ -1,0 +1,3 @@
+Host: MacBook Air (Apple M4, 10 cores, 16 GB Unified RAM)
+OS: macOS 15.1 (Sequoia)
+Hypervisor: UTM 4.6 (QEMU-based, ARM64 virtualization)
