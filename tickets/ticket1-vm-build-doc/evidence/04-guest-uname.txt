@@ -1,0 +1,1 @@
+Linux lab01-issuev 7.0.0-30-generic #30-Ubuntu SMP PREEMPT_DYNAMIC x86_64 GNU/Linux
