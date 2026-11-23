@@ -1,5 +1,0 @@
-=== Memory Before (Both Guests Off) ===
-Total RAM: 16.00 GB
-Used: ~6.2 GB (macOS + background apps)
-Available: ~9.8 GB
-Swap Used: 0 MB

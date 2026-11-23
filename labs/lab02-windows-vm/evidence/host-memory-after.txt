@@ -1,6 +1,0 @@
-=== Memory After (Both Guests Overcommitted) ===
-Total RAM: 16.00 GB
-Used: ~15.8 GB
-Available: ~0.2 GB
-Swap Used: ~8.5 GB
-System became unresponsive; mouse lagged.

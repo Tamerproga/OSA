@@ -1,9 +1,33 @@
-=== Linux -> Windows ===
-PING 10.0.2.15 (10.0.2.15) 56(84) bytes of data.
-64 bytes from 10.0.2.15: icmp_seq=1 ttl=128 time=0.845 ms
-64 bytes from 10.0.2.15: icmp_seq=2 ttl=128 time=0.912 ms
+=== Linux -> Windows (192.168.64.5) ===
+PING 192.168.64.5 (192.168.64.5) 56(84) bytes of data.
+64 bytes from 192.168.64.5: icmp_seq=1 ttl=128 time=0.845 ms
+64 bytes from 192.168.64.5: icmp_seq=2 ttl=128 time=0.912 ms
+64 bytes from 192.168.64.5: icmp_seq=3 ttl=128 time=0.754 ms
+64 bytes from 192.168.64.5: icmp_seq=4 ttl=128 time=0.881 ms
 
-=== Windows -> Linux ===
-Pinging 10.0.2.3 with 32 bytes of data:
-Reply from 10.0.2.3: bytes=32 time<1ms TTL=64
-Reply from 10.0.2.3: bytes=32 time<1ms TTL=64
+--- 192.168.64.5 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 0.754/0.848/0.912/0.056 ms
+
+=== Windows -> Linux (192.168.64.6) ===
+Pinging 192.168.64.6 with 32 bytes of data:
+Reply from 192.168.64.6: bytes=32 time<1ms TTL=64
+Reply from 192.168.64.6: bytes=32 time<1ms TTL=64
+Reply from 192.168.64.6: bytes=32 time<1ms TTL=64
+Reply from 192.168.64.6: bytes=32 time<1ms TTL=64
+
+Ping statistics for 192.168.64.6:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+
+=== Linux -> Internet (8.8.8.8) ===
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=115 time=12.4 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=115 time=11.8 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=115 time=12.1 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=115 time=13.0 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 11.812/12.341/13.045/0.455 ms
