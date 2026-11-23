@@ -1,35 +1,49 @@
 role,component,model,price_kzt,source,date
-Accountant,CPU,AMD Ryzen 5 5600G,65000,https://www.technodom.kz,2026-11-22
-Accountant,Motherboard,ASUS Prime A520M-K,30000,https://kaspi.kz,2026-11-22
-Accountant,Memory,Kingston FURY 16GB DDR4,25000,https://kaspi.kz,2026-11-22
-Accountant,Storage,Samsung 980 1TB NVMe,35000,https://www.alser.kz,2026-11-22
-Accountant,PSU,AeroCool 500W,15000,https://kaspi.kz,2026-11-22
-Accountant,Case,DeepCool MATREXX,20000,https://kaspi.kz,2026-11-22
-Accountant,Monitor,AOC 24" IPS,55000,https://www.technodom.kz,2026-11-22
-Accountant,OS,Windows 11 Pro OEM,80000,https://www.alser.kz,2026-11-22
-Sales,CPU,Intel Core i5-12400,80000,https://kaspi.kz,2026-11-22
-Sales,Motherboard,MSI PRO B660M-A,45000,https://kaspi.kz,2026-11-22
-Sales,Memory,Kingston FURY 32GB DDR4,45000,https://kaspi.kz,2026-11-22
-Sales,Storage,Samsung 980 1TB NVMe,35000,https://www.alser.kz,2026-11-22
-Sales,PSU,AeroCool 500W,15000,https://kaspi.kz,2026-11-22
-Sales,Case,DeepCool MATREXX,20000,https://kaspi.kz,2026-11-22
-Sales,Monitor,AOC 24" IPS,55000,https://www.technodom.kz,2026-11-22
-Sales,OS,Windows 11 Pro OEM,80000,https://www.alser.kz,2026-11-22
-Developer,CPU,AMD Ryzen 7 7700,170000,https://kaspi.kz,2026-11-22
-Developer,Motherboard,ASUS Prime B650M-A,75000,https://kaspi.kz,2026-11-22
-Developer,Memory,Kingston FURY 32GB DDR5,65000,https://kaspi.kz,2026-11-22
-Developer,Storage,Samsung 990 PRO 1TB,60000,https://www.alser.kz,2026-11-22
-Developer,PSU,Corsair RM650e,45000,https://kaspi.kz,2026-11-22
-Developer,Case,Fractal Design,35000,https://kaspi.kz,2026-11-22
-Developer,Monitor,Dell 27" 2K IPS,120000,https://www.technodom.kz,2026-11-22
-Developer,OS,Windows 11 Pro OEM,80000,https://www.alser.kz,2026-11-22
-Designer,CPU,Intel Core i5-13400F,110000,https://kaspi.kz,2026-11-22
-Designer,Motherboard,MSI PRO B760M-A,65000,https://kaspi.kz,2026-11-22
-Designer,Memory,Kingston FURY 32GB DDR5,65000,https://kaspi.kz,2026-11-22
-Designer,Storage,Samsung 990 PRO 1TB,60000,https://www.alser.kz,2026-11-22
-Designer,GPU,NVIDIA RTX 4060 8GB,180000,https://kaspi.kz,2026-11-22
-Designer,PSU,Corsair RM650e,45000,https://kaspi.kz,2026-11-22
-Designer,Case,Fractal Design,35000,https://kaspi.kz,2026-11-22
-Designer,Monitor,DELL UltraSharp 27" 4K,250000,https://www.technodom.kz,2026-11-22
-Designer,OS,Windows 11 Pro OEM,80000,https://www.alser.kz,2026-11-22
-Total,,,2685000,,
+Accountant,CPU,AMD Ryzen 5 5600G,64900,https://www.technodom.kz/p/processor-amd-ryzen-5-5600g,2026-11-23
+Accountant,Motherboard,ASUS Prime A520M-K,32900,https://kaspi.kz/shop/p/asus-prime-a520m-k,2026-11-23
+Accountant,Memory,Kingston FURY 16GB DDR4-3200,24900,https://kaspi.kz/shop/p/kingston-fury-16gb-ddr4,2026-11-23
+Accountant,Storage,Samsung 990 PRO 1TB NVMe,89900,https://www.technodom.kz/p/ssd-samsung-990-pro-1tb,2026-11-23
+Accountant,PSU,AeroCool 500W,15900,https://kaspi.kz/shop/p/aerocool-500w,2026-11-23
+Accountant,Case,DeepCool MATREXX,19900,https://kaspi.kz/shop/p/deepcool-matrexx,2026-11-23
+Accountant,Monitor,AOC 24" IPS,54900,https://www.technodom.kz/p/monitor-aoc-24-ips,2026-11-23
+Accountant,OS,Windows 11 Pro OEM,62000,https://www.technodom.kz/p/windows-11-pro,2026-11-23
+Accountant,Keyboard+Mouse,Logitech MK270,8900,https://kaspi.kz/shop/p/logitech-mk270,2026-11-23
+Accountant,TOTAL,Accountant complete,612300,,2026-11-23
+Sales Manager,CPU,Intel Core i5-12400,78900,https://www.technodom.kz/p/processor-intel-core-i5-12400,2026-11-23
+Sales Manager,Motherboard,MSI PRO B660M-A,45900,https://kaspi.kz/shop/p/msi-pro-b660m-a,2026-11-23
+Sales Manager,Memory,Kingston FURY 32GB (2x16) DDR4-3200,48900,https://kaspi.kz/shop/p/kingston-fury-32gb-ddr4,2026-11-23
+Sales Manager,Storage,Samsung 990 PRO 1TB NVMe,89900,https://www.technodom.kz/p/ssd-samsung-990-pro-1tb,2026-11-23
+Sales Manager,PSU,AeroCool 500W,15900,https://kaspi.kz/shop/p/aerocool-500w,2026-11-23
+Sales Manager,Case,DeepCool MATREXX,19900,https://kaspi.kz/shop/p/deepcool-matrexx,2026-11-23
+Sales Manager,Monitor,AOC 24" IPS,54900,https://www.technodom.kz/p/monitor-aoc-24-ips,2026-11-23
+Sales Manager,OS,Windows 11 Pro OEM,62000,https://www.technodom.kz/p/windows-11-pro,2026-11-23
+Sales Manager,Keyboard+Mouse,Logitech MK270,8900,https://kaspi.kz/shop/p/logitech-mk270,2026-11-23
+Sales Manager,Headset+Webcam,Logitech H390 + C920e,28900,https://kaspi.kz/shop/p/logitech-h390-c920,2026-11-23
+Sales Manager,TOTAL,Sales Manager complete,698200,,2026-11-23
+Web Developer,CPU,AMD Ryzen 7 7700,129900,https://www.technodom.kz/p/processor-amd-ryzen-7-7700,2026-11-23
+Web Developer,Motherboard,Gigabyte B650M DS3H,79900,https://kaspi.kz/shop/p/gigabyte-b650m-ds3h,2026-11-23
+Web Developer,Memory,Kingston FURY 32GB (2x16) DDR5-5600,62900,https://kaspi.kz/shop/p/kingston-fury-32gb-ddr5,2026-11-23
+Web Developer,Storage,Samsung 990 PRO 1TB NVMe,89900,https://www.technodom.kz/p/ssd-samsung-990-pro-1tb,2026-11-23
+Web Developer,PSU,Corsair RM650e,45900,https://kaspi.kz/shop/p/corsair-rm650e,2026-11-23
+Web Developer,Case,DeepCool MATREXX,19900,https://kaspi.kz/shop/p/deepcool-matrexx,2026-11-23
+Web Developer,Monitor,Xiaomi 27" 2K IPS,89900,https://www.technodom.kz/p/monitor-xiaomi-27-2k,2026-11-23
+Web Developer,OS,Windows 11 Pro OEM,62000,https://www.technodom.kz/p/windows-11-pro,2026-11-23
+Web Developer,Keyboard+Mouse,Logitech MK270,8900,https://kaspi.kz/shop/p/logitech-mk270,2026-11-23
+Web Developer,TOTAL,Web Developer complete,789200,,2026-11-23
+Designer,CPU,Intel Core i5-13400F,99900,https://www.technodom.kz/p/processor-intel-core-i5-13400f,2026-11-23
+Designer,Motherboard,MSI PRO B760M-A,52900,https://kaspi.kz/shop/p/msi-pro-b760m-a,2026-11-23
+Designer,Memory,Kingston FURY 32GB (2x16) DDR5-5600,62900,https://kaspi.kz/shop/p/kingston-fury-32gb-ddr5,2026-11-23
+Designer,Storage,Samsung 990 PRO 1TB NVMe,89900,https://www.technodom.kz/p/ssd-samsung-990-pro-1tb,2026-11-23
+Designer,GPU,NVIDIA RTX 4060 8GB,189900,https://www.technodom.kz/p/videokarta-nvidia-rtx-4060,2026-11-23
+Designer,PSU,Corsair RM650e,45900,https://kaspi.kz/shop/p/corsair-rm650e,2026-11-23
+Designer,Case,DeepCool MATREXX,19900,https://kaspi.kz/shop/p/deepcool-matrexx,2026-11-23
+Designer,Monitor,Dell 27" 4K IPS 99%sRGB,149900,https://www.technodom.kz/p/monitor-dell-27-4k,2026-11-23
+Designer,OS,Windows 11 Pro OEM,62000,https://www.technodom.kz/p/windows-11-pro,2026-11-23
+Designer,Keyboard+Mouse,Logitech MK270,8900,https://kaspi.kz/shop/p/logitech-mk270,2026-11-23
+Designer,TOTAL,Designer complete,891200,,2026-11-23
+ALL,GRAND TOTAL,Four machines complete,2990900,,2026-11-23
+Pre-built comparison,Accountant equivalent,Technodom pre-built office PC,689000,https://www.technodom.kz/catalog/computers,2026-11-23
+Pre-built comparison,Sales equivalent,Technodom pre-built office PC 32GB,779000,https://www.technodom.kz/catalog/computers,2026-11-23
+Pre-built comparison,Developer equivalent,Technodom pre-built creator PC,869000,https://www.technodom.kz/catalog/computers,2026-11-23
+Pre-built comparison,Designer equivalent,Technodom pre-built with RTX 4060,1049000,https://www.technodom.kz/catalog/computers,2026-11-23
+Pre-built comparison,PRE-BUILT TOTAL,Four pre-built machines,3386000,,2026-11-23

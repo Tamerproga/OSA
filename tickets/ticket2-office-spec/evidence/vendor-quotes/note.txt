@@ -1,0 +1,3 @@
+All prices in budget.csv were checked on 23 November 2026 on technodom.kz and kaspi.kz.
+Screenshots of the product pages can be added later if the teacher requires visual proof.
+The important point is that every price has a real URL and a concrete date.
