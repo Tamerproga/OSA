@@ -1,3 +1,3 @@
 $ sha256sum /mnt/raid1/proof.txt /mnt/raid1/random.bin
 bee01a965643c027fc99dd74f2916c572c261fdc77ce729802975521c4e9fe33   /mnt/raid1/proof.txt
-9b4a919c1115ca22fdad12f12c1d8be55051906ae39baebe366e49cb96d52175   /mnt/raid1/random.bin
+91a8456eba4f65728085713ed3508dcaec2d013d5aec782af814049c7599d8c5   /mnt/raid1/random.bin
