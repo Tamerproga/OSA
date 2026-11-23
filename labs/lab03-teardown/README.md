@@ -34,13 +34,13 @@
 
 ### Three-OS Comparison Table
 
-| Fact | macOS (Host) | Linux (Ubuntu VM) | Windows |
+| Fact | macOS (Host) | Linux (Ubuntu VM) | Windows (Theoretical) |
 | :--- | :--- | :--- | :--- |
 | **CPU Name** | `sysctl -n machdep.cpu.brand_string` | `lscpu` | `wmic cpu get name` |
 | **RAM Amount** | `sysctl hw.memsize` | `free -h` | `wmic memorychip get capacity` |
 | **Disk Info** | `system_profiler SPStorageDataType` | `lsblk` | `wmic diskdrive get size` |
 
-*Raw outputs are saved in the `evidence/` folder as `macos-specs.txt`, `linux-specs.txt`, and `windows-specs.txt`, including the commands above each output.*
+*Raw outputs are saved in the `evidence/` folder as `macos-specs.txt`, `linux-specs.txt`, and `windows-specs.txt`. Note: The Windows output is labeled theoretical because my host is an Apple M4 Mac and no Windows machine was available.*
 
 ## What did not work the first time
-The first time, my captions were too brief and only mentioned limits without explaining what the part connects to. Also, I forgot to include the actual terminal commands in the output text files, and I did not specify that the second computer build requires its own separate power supply. I have corrected all of these issues in this submission.
+The first time, my captions were too brief, I forgot to include the actual terminal commands in the output text files, and I did not specify that the second computer build requires its own separate power supply. Also, my photos were not placed in the correct evidence folder. I have corrected all of these issues in this submission.

@@ -1,3 +1,4 @@
+*** THEORETICAL OUTPUT (No Windows machine available on Apple M4) ***
 > wmic cpu get name
 Intel(R) Core(TM) i5-13400
 
