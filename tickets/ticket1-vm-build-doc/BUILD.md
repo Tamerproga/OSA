@@ -1,28 +1,31 @@
 # How to build a Test Machine (Ubuntu & Windows)
 
 ## Step 1: Download the Tools
-1. Install VirtualBox (or VMware) from the official website.
-2. Download the Ubuntu Server ISO and Windows 11 ISO.
+1. Download and install UTM from https://mac.getutm.app (Free hypervisor for Apple Silicon).
+2. Download the Ubuntu Server ARM64 ISO from https://ubuntu.com/download/server/arm.
+3. Download the Windows 11 Enterprise Evaluation ARM64 ISO from https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise.
 
 ## Step 2: Create the Linux (Ubuntu) Guest
-1. Open VirtualBox and click **New**.
-2. Name: `lab01-issuev`. Type: Linux. Version: Ubuntu (64-bit).
-3. Memory: **2048 MB**. Processors: **2**.
-4. Hard Disk: Create a virtual disk now, **25 GB**, Dynamically allocated.
-5. Start the VM, select the ISO, and follow the installer. Choose "Install OpenSSH server" when asked.
+1. Open UTM and click **Create a New Virtual Machine**.
+2. Select **Virtualize** -> **Linux**.
+3. Browse to the Ubuntu Server ARM64 ISO.
+4. Memory: **2048 MB**. CPU Cores: **2**. Storage: **25 GB**.
+5. Start the VM. Choose "Install OpenSSH server" when asked.
 
-## Step 3: Create the Windows Guest
-1. Open VirtualBox and click **New**.
-2. Name: `lab02-windows`. Type: Microsoft Windows. Version: Windows 11 (64-bit).
-3. Memory: **4096 MB**. Processors: **2**.
-4. Hard Disk: Create a virtual disk now, **64 GB**, Dynamically allocated.
-5. **Important:** Go to Settings -> System and enable **TPM 2.0** and **Secure Boot** (required for Windows 11).
-6. Start the VM, select the ISO, and install Windows.
+## Step 3: Create the Windows Guest (Requires EFI/Secure Boot)
+1. Open UTM and click **Create a New Virtual Machine**.
+2. Select **Virtualize** -> **Windows**.
+3. Browse to the Windows 11 Enterprise ARM64 ISO.
+4. Memory: **4096 MB**. CPU Cores: **4**. Storage: **64 GB**.
+5. **Important:** In UTM settings, enable **EFI Boot** and **Secure Boot** (TPM 2.0 is emulated by default in UTM). Windows 11 will refuse to install without this.
+6. Start the VM and follow the Windows installer.
 
-## Step 4: Networking
-In the VM settings, under Network Adapter, choose **NAT**. 
-*Why NAT and not Bridged?* The Innotech teaching network filters by MAC address. A bridged adapter gives the guest its own MAC, which the network will reject. Behind NAT, the guest goes out using the host's address, and the problem disappears.
-> Check: run `ip addr` inside the guest. You should see an address like 192.168.x.x, different from the host's.
+## Step 4: Networking (Shared Network)
+In UTM, go to Settings -> Network. Change the mode to **Shared Network**.
+*Why Shared Network and not Bridged?* The Innotech teaching network filters by MAC address. A bridged adapter gives the guest its own MAC, which the network will reject. Behind Shared Network, the guest goes out using the host's address, and the problem disappears. Note: Plain NAT in VirtualBox does not allow guests to see each other, so Shared Network (NAT Network) is required.
+> Check: run `ip addr` inside the guest. You should see an address like 192.168.64.x.
 
-## Step 5: Snapshot
-Before you start testing, shut down the VM. Go to Snapshots -> Take. Name it `clean-install`.
+## Step 5: Test and Rollback
+1. Test the connection by pinging from Ubuntu to Windows.
+2. Shut down the VM. Go to Snapshots -> Take. Name it `clean-install`.
+3. If you break something, just click "Restore" to roll back instantly.

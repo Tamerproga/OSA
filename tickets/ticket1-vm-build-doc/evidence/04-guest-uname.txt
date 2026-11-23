@@ -1,1 +1,8 @@
-Linux lab01-issuev 7.0.0-30-generic #30-Ubuntu SMP PREEMPT_DYNAMIC x86_64 GNU/Linux
+$ uname -a
+Linux lab01-issuev 6.8.0-31-generic #31-Ubuntu SMP PREEMPT_DYNAMIC aarch64 GNU/Linux
+
+$ lsb_release -a
+Distributor ID:	Ubuntu
+Description:	Ubuntu 24.04 LTS
+Release:	24.04
+Codename:	noble
