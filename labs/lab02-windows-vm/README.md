@@ -23,7 +23,7 @@ The host has an Apple M4 chip (10 cores) and 16 GB of unified memory.
 
 ### 3. Windows 11 evaluation VM
 Built from the Windows 11 Enterprise Evaluation ARM64 ISO (no licence key entered, 90-day evaluation).
-Because the host is Apple Silicon, the x64 evaluation image provided in the course cannot run. I used the ARM64 version, which is the only option for native virtualization on this hardware. I used UTM, which provides hardware-accelerated virtualization for ARM64 guests on macOS.
+Because the host is Apple Silicon, the x64 evaluation image provided in the course cannot run. I used the ARM64 version. I used UTM, which provides hardware-accelerated virtualization for ARM64 guests on macOS.
 
 | VM | vCPU | RAM | Disk | Firmware |
 |---|---|---|---|---|
@@ -51,7 +51,7 @@ Then both directions plus the internet worked (see evidence/ping-both-ways.txt f
 ### 6. Memory overcommitment
 Host memory was measured using memory_pressure and vm_stat in the macOS terminal. With both guests off, the host had about 9.8 GB available.
 
-1. Both guests off -> measured "before" (evidence/host-memory-before.txt).
+1. Both guests off -> measured "before" (evidence/host-memory-before.png).
 2. Raised allocations: win11-arm 12 GB, ubuntu-server 8 GB - 20 GB promised on a 16 GB host.
 3. Started both guests and filled memory in Ubuntu.
 4. What the host did: macOS began swapping heavily (Swapouts: 1548902). The system became unresponsive for several seconds at a time.
@@ -80,5 +80,5 @@ What I did: Uninstalled it and wrote a custom memory-filling script in Python, w
 - evidence/ip-addr-linux.txt
 - evidence/ping-both-ways.txt
 - evidence/firewall-rule.txt
-- evidence/host-memory-before.txt
-- evidence/host-memory-after.txt
+- evidence/host-memory-before.png
+- evidence/host-memory-after.png
