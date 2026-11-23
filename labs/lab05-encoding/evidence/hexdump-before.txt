@@ -1,2 +1,2 @@
-00000000  49 44 3b d4 e0 ec e8 eb  e8 ff 3b c8 ec ff 3b ce  |ID;.......;...;.|
-00000010
+$ head -c 16 labs/lab05-encoding/evidence/staff-broken.csv | xxd
+00000000: 4944 3bd4 e0ec e8eb e8ff 3bc8 ecff 3bce  ID;.......;...;.

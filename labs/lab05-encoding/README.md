@@ -1,15 +1,20 @@
 # Lab 5 — Encoding forensics
 
-## Diagnosis
-Before fixing, I checked the original file. The `file` command revealed `Non-ISO extended-ASCII text, with CRLF line terminators`. The hexdump showed bytes like `d4 e0` which correspond to Cyrillic characters in **Windows-1251** encoding. Therefore, the file had two issues: 
-1. **Encoding:** Windows-1251 (Cyrillic).
-2. **Line endings:** CRLF (Windows format).
+## Diagnosis Before Fix
+- **Source encoding:** KZ-1048 (RK1048) (not Windows-1251; e.g. byte 0xA3 maps to Kazakh Ә in KZ-1048 rather than Ҹ/J in Windows-1251).
+- **Line endings:** CRLF (
+).
+- **Byte Order Mark (BOM):** None initially (no UTF-8 BOM EF BB BF at byte 0).
+- **Field delimiter / separator:** semicolon (;).
 
-## Fix
-I wrote a script (`scripts/fix.sh`) that uses `iconv` to convert the file from Windows-1251 to **UTF-8**, and `tr` to remove the carriage return characters (`\r`), changing the line endings to LF (Unix format). The fixed file is saved as `staff-fixed.csv`.
+## BOM Decision
+Add a UTF-8 BOM (EF BB BF) to staff-fixed.csv so Excel recognizes UTF-8 automatically when opening the CSV file directly (such as via double-click) without garbled Cyrillic/Kazakh characters, while normalizing line endings to LF.
+
+## Fix Script & Conversion
+Converted from KZ-1048 to UTF-8 via iconv, normalized line endings, and prepended the UTF-8 BOM using scripts/fix.sh.
 
 ## Verification
-After running the script, the `file` command shows that the new file is `UTF-8 Unicode text`. Opening the file with `cat` in the terminal, Excel, and LibreOffice now displays the Kazakh and Russian names correctly without any garbage characters.
+Verified output in terminal (file, hexdump/cat) and desktop spreadsheet/text viewers; see evidence/file-before.txt, evidence/hexdump-before.txt, evidence/file-after.txt, evidence/staff-broken.csv, and evidence/staff-fixed.csv.
 
-## Byte Order Mark (BOM)
-I checked the first 16 bytes using `hexdump`. The sequence started with `d4 e0 ec e8`, which are the characters for Windows-1251. There was **no BOM** (like `EF BB BF`). Since the file is Windows-1251, it shouldn't have a UTF-8 BOM anyway. I converted it to standard UTF-8 without a BOM, which is the safest choice for Linux scripts and CSV files to prevent weird characters at the beginning.
+## What did not work
+Attempt 1 treated the file as Windows-1251 instead of KZ-1048 (causing wrong Kazakh letters such as Ә/Қ/Ң), omitted a BOM (needed by Excel for direct UTF-8 recognition), did not explicitly name the delimiter in README, and had a mismatch between claimed viewers and screenshots.
